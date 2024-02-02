@@ -14,10 +14,14 @@ const NetworksStatus = () => {
       window.removeEventListener("offline", changeStatus);
     };
   }, []);
+
+  // checking online
   const optionsOnline = {
     animationData: online,
     loop: true,
   };
+
+  // ckecking offline
   const optionsOffline = {
     animationData: offline,
     loop: true,
